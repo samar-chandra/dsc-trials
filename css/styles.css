@@ -176,10 +176,11 @@
         background-size: 80vw;
         background-repeat: no-repeat;
         text-align: center;
+        color: gray;
     }
     
     .passion h1 {
-        color: gray;
+        margin-top: 50px;
         font-weight: bold;
     }
     
@@ -274,7 +275,6 @@
     }
     
     #pot1 {
-        margin-top: -50px;
         position: absolute;
         animation: run 10s linear infinite;
         -webkit-animation: linear infinite;
@@ -292,7 +292,6 @@
     }
     
     #pot2 {
-        margin-top: -50px;
         position: absolute;
         animation: run2 50s linear infinite;
         -webkit-animation: linear infinite;
@@ -310,7 +309,6 @@
     }
     
     #pot3 {
-        margin-top: -65px;
         position: absolute;
         animation: run3 30s linear infinite;
         -webkit-animation: linear infinite;
@@ -327,6 +325,21 @@
         }
     }
     
+    .cycle {
+        margin-top: -5vw;
+        width: 3vw;
+    }
+    
+    .bike {
+        margin-top: -6.5vw;
+        width: 5vw;
+    }
+    
+    .car {
+        margin-top: -5vw;
+        width: 8vw;
+    }
+    
     .whoweare {
         margin-top: 50px;
         color: white;
@@ -334,7 +347,7 @@
     }
     
     .writeup {
-        background-color: #88DEF4;
+        background-color: #8FDFF5;
         margin-bottom: -10px;
     }
     
@@ -414,6 +427,7 @@
     }
     
     .motion {
+        overflow-y: hidden;
         overflow-x: hidden;
     }
     
