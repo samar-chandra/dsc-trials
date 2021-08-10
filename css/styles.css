@@ -2,12 +2,8 @@
     * {
         margin: 0;
         padding: 0;
-        font-size: 1.25vw;
+        font-size: 22px;
         font-family: 'Ubuntu', sans-serif;
-    }
-    
-    body {
-        overflow-x: hidden;
     }
     
     ul li {
@@ -32,7 +28,7 @@
     }
     
     .social-media ul li {
-        margin: 5px;
+        margin: 0.5vw;
         transition: 0.70s;
         -webkit-transition: 0.70s;
         -moz-transition: 0.70s;
@@ -131,7 +127,6 @@
     }
     
     .navigation span {
-        font-size: 22px;
         display: none;
     }
     
@@ -180,29 +175,31 @@
         background-position: bottom right;
         background-size: 80vw;
         background-repeat: no-repeat;
-        padding: 5em 0 0 8em;
+        text-align: center;
     }
     
     .passion h1 {
         color: gray;
         font-weight: bold;
-        font-size: 3.2vw;
     }
     
     .passion-text {
         color: gray;
         display: flex;
         float: left;
-        width: 40vw;
     }
     
     .passion-text div {
         text-align: center;
     }
     
-    .passion-image {
-        width: 40vw;
-        margin-top: 50px;
+    .passion-image img {
+        margin-top: 30%;
+        width: 100%;
+    }
+    
+    .passion .dsclogo {
+        width: 10em;
     }
     
     .icon {
@@ -287,7 +284,7 @@
     
     @-webkit-keyframes run {
         0% {
-            left: -10%;
+            left: 0%;
         }
         100% {
             left: 100%;
@@ -305,7 +302,7 @@
     
     @-webkit-keyframes run2 {
         0% {
-            left: -10%;
+            left: 0%;
         }
         100% {
             left: 100%;
@@ -326,42 +323,31 @@
             left: 100%;
         }
         100% {
-            left: -10%;
+            left: 0%;
         }
     }
     
     .whoweare {
+        margin-top: 50px;
         color: white;
         text-align: center;
-        background-color: #87DDF4;
-        margin-top: 100px;
+    }
+    
+    .writeup {
+        background-color: #88DEF4;
+        margin-bottom: -10px;
     }
     
     .whoweare h1 {
-        font-size: 3.2vw;
-        padding: 50px 0 50px 0;
+        padding-top: 50px;
     }
     
     .whoweare span {
         color: #FD2B25;
     }
     
-    .whoweare p,
-    span {
-        font-size: 1.9vw;
-    }
-    
     .motion {
         position: relative;
-    }
-    
-    .glogo {
-        position: absolute;
-        bottom: 150px;
-        left: 40%;
-        z-index: 10;
-        margin-top: -500px;
-        width: 300px;
     }
     
     .wrapper {
@@ -427,6 +413,111 @@
         color: white;
     }
     
-    .hex-inner2 p i {
-        font-size: 8vw;
+    .motion {
+        overflow-x: hidden;
+    }
+    
+    @media screen and (max-width:750px) {
+        .navigation ul li button {
+            background-color: none;
+            border: 0px;
+            width: 100px;
+        }
+        .home,
+        .events,
+        .team,
+        .faqs,
+        .joinus,
+        .contactus {
+            font-size: 1.5vw;
+            padding: 1vw;
+            margin: 0.5vw 0.5vw 0.5vw 0;
+            color: white;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 5px 5px 20px black;
+            text-align: right;
+            margin-left: -75px;
+        }
+        .navigation ul li:hover {
+            transform: translateX(50px);
+            transition: transform .4s ease-out;
+        }
+        .col-sm-12 {
+            margin: 0;
+            padding: 0;
+        }
+        * {
+            font-size: 13px;
+        }
+        .icon,
+        .passion-image {
+            display: none;
+        }
+        .passion {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../res/img/google.svg');
+            background-position: center;
+        }
+        .social-media ul li i,
+        .social-media ul li img {
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px black;
+            transition: transform 2s;
+        }
+        .navigation {
+            z-index: 100;
+            position: fixed;
+            top: 3vw;
+            left: 0;
+        }
+        .social-media {
+            z-index: 100;
+            position: fixed;
+            top: 1vw;
+            right: 0;
+            padding-top: 0;
+        }
+    }
+    
+    @media screen and (max-width:990px) {
+        .icon,
+        .passion-image {
+            display: none;
+        }
+        .passion {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../res/img/google.svg');
+            background-position: center;
+        }
+    }
+    
+    @media screen and (max-width:550px) {
+        .social-media ul li i,
+        .social-media ul li img {
+            width: 25px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 25px;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px black;
+            transition: transform 2s;
+        }
+    }
+    
+    @media screen and (max-width:400px) {
+        .social-media ul li i,
+        .social-media ul li img {
+            width: 20px;
+            height: 20px;
+            font-size: 15px;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px black;
+            transition: transform 2s;
+        }
     }
